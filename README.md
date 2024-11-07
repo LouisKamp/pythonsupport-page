@@ -21,21 +21,17 @@ documentation can be built.
 
 The steps can be outlined like this:
 
-1. Create a virtual environment (on a Linux box)
+1. Create a conda environment
 
-       python3 -m venv ps-page-env
-       source ps-page-env/bin/activate
+       conda env create -f environment.yml
+       conda activate ps-page-env
+       npm install -g terminalizer
 
-2. Install the requirements:
+2. Render gifs
 
-       python3 -m pip install -r requirements.txt
-       # currently there is a blocking dependency on some of the
-       # packages listed in requirements.txt, however, since pip
-       # will allow updating a package that breaks compatibility, we
-       # can use this to our advantage. The documentation builds fine.
-       # Only some non-used features will not work. So we should be fine.
-       #    :fingers_crossed:
-       python3 -m pip install -U "sphinx>=7.2.5"
+       make rendergifs
+   
+   This will render the terminal gifs for the website. The sphinx build will not fail if these gifs do not exist - but it will create error messages.
 
 3. Build documentation
 

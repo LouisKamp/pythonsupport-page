@@ -39,3 +39,6 @@ linkcheck:
 	@echo
 	@echo "Check finished. Report is in $(LINKCHECKDIR)."
 
+.PHONY: rendergifs
+rendergifs:
+	@cd ./docs/os/gifs && bash create.sh

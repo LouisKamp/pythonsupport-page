@@ -1,0 +1,19 @@
+name: ps-page-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - nodejs
+  - sphinx >=7.2.5
+  - toml
+  - sphinx-book-theme
+  - sphinx-copybutton
+  - sphinx-inline-tabs
+  - sphinx-togglebutton
+  - sphinxcontrib-spelling
+  - sphinx-design
+  - sphinxcontrib-jquery
+  - pyyaml
+  - pip:
+    - sphinxemoji
