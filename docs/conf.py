@@ -68,6 +68,8 @@ _pref_symbol = ":fas:`ranking-star`"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
+sys.path.insert(0, os.path.abspath('_extensions'))
+
 extensions = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.mathjax",
@@ -88,6 +90,7 @@ extensions = [
     "sphinx_design",
     # enable target=_blank via jquery
     "sphinxcontrib.jquery",
+    "oslink"
 ]
 
 
@@ -294,13 +297,14 @@ if False:
     ] = "file:///home/nicpa/dcc/python-support/ps-webpage/build/html/_static/course_switcher.json"
     html_theme_options["navbar_center"].append("version-switcher")
 
-html_js_files = ["js/external_tab.js", "js/custom.js"]
+html_js_files = ["js/external_tab.js", "js/custom.js", "js/oslink.js"]
 
 html_css_files = [
     ("css/bannerStyles.css", {"priority": 999}),
     ("css/questionairStyles.css", {"priority": 999}),
     ("css/popupStyles.css", {"priority": 999}),
     ("css/custom_styles.css", {"priority": 998}),
+    ("css/oslink_styles.css", {"priority": 997}),
     "css/colors.css",
 ]
 
