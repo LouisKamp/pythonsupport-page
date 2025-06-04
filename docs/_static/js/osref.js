@@ -9,16 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     let el1 = document.getElementsByClassName(osClassName)
-    let el2 = document.getElementsByClassName("oslink-show")
+    let el2 = document.getElementsByClassName("osref-show")
 
     for (let i = 0; i < el2.length; i++) {
-        el2[i].classList.toggle('oslink-hide');
-        el2[i].classList.toggle("oslink-show");
+        el2[i].classList.toggle('osref-hide');
+        el2[i].classList.toggle("osref-show");
     }
 
     for (let i = 0; i < el1.length; i++) {
-        el1[i].classList.toggle('oslink-hide');
-        el1[i].classList.toggle("oslink-show");
+        el1[i].classList.toggle('osref-hide');
+        el1[i].classList.toggle("osref-show");
     }
 
 })
