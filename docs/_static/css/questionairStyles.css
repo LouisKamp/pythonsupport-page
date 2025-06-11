@@ -20,16 +20,26 @@
     linear-gradient(-45deg, transparent var(--g), rgb(255 255 255 / 60%) 0) left / var(--c) 100%,
     linear-gradient(135deg, transparent var(--g), rgb(255 255 255 / 30%) 0) bottom / 100% var(--c),
     conic-gradient(from -90deg at top var(--b) right var(--b), currentcolor 270deg, transparent 0),
-    conic-gradient(from 90deg at bottom calc(var(--c) + var(--b)) left calc(var(--c) + var(--b)), currentcolor 270deg, transparent 0);
+    conic-gradient(
+      from 90deg at
+      bottom calc(var(--c) + var(--b))
+      left calc(var(--c) + var(--b)),
+      currentcolor 270deg,
+      transparent 0
+    );
   background-repeat: no-repeat;
   background-origin: border-box;
   transform: translate(calc(var(--c) / -1), calc(var(--c) / 1));
   clip-path:
-    polygon(var(--c) 0%, var(--c) 0%,
+    polygon(
+      var(--c) 0%,
+      var(--c) 0%,
       100% 0%,
-      100% calc(100% - var(--c)), 100% calc(100% - var(--c)),
+      100% calc(100% - var(--c)),
+      100% calc(100% - var(--c)),
       var(--c) calc(100% - var(--c)),
-      var(--c) calc(100% - var(--c)));
+      var(--c) calc(100% - var(--c))
+    );
   cursor: pointer;
   /* Change cursor to pointer to indicate it's clickable */
 }
@@ -37,13 +47,16 @@
 .PyS_d-1:hover {
   transform: translate(0, 0);
   clip-path:
-    polygon(0% var(--c), var(--c) 0%,
+    polygon(
+      0% var(--c),
+      var(--c) 0%,
       100% 0%,
-      100% calc(100% - var(--c)), calc(100% - var(--c)) 100%,
-      0% 100%, 0% 100%);
+      100% calc(100% - var(--c)),
+      calc(100% - var(--c)) 100%,
+      0% 100%,
+      0% 100%
+    );
 }
-
-
 
 /*  */
 .PyS_d-1,
@@ -82,26 +95,26 @@
 
 @font-face {
   font-family: NeoSans;
-  src: url('../fonts/Neo Sans Std Regular/Neo Sans Std Regular.otf') format('truetype');
+  src: url("../fonts/Neo Sans Std Regular/Neo Sans Std Regular.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: NeoSans;
-  src: url('../fonts/Neo Sans Std Bold/Neo Sans Std Bold.otf') format('truetype');
+  src: url("../fonts/Neo Sans Std Bold/Neo Sans Std Bold.otf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: NeoSans;
-  src: url('../fonts/Neo Sans Std Light/Neo Sans Std Light.otf') format('truetype');
+  src: url("../fonts/Neo Sans Std Light/Neo Sans Std Light.otf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
-@media (width <=600px) {
+@media (width <= 600px) {
   .PyS_d-1 {
     font-size: 1em;
   }
