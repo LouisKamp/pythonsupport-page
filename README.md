@@ -26,7 +26,7 @@ The steps can be outlined like this:
 
 2. Install the requirements:
 
-       python3 -m pip install -r requirements.txt sphinx-autobuild
+       python3 -m pip install -r requirements.txt sphinx-autobuild docstrfmt
        # currently there is a blocking dependency on some of the
        # packages listed in requirements.txt, however, since pip
        # will allow updating a package that breaks compatibility, we
@@ -69,6 +69,10 @@ Once these are installed, simply do:
 
 and the gifs should be created. The script will only create them once,
 and keep them around. So this should only be required to be done once.
+
+## .RST formatting
+
+We use `docstrfmt **/*.rst` in order to autoformat .rst files.
 
 
 ## Running Locally in Podman
