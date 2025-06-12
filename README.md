@@ -72,7 +72,7 @@ and keep them around. So this should only be required to be done once.
 
 ## .RST formatting
 
-We use `docstrfmt **/*.rst` in order to autoformat .rst files.
+We use `docstrfmt **/*.rst -l 72` in order to autoformat .rst files.
 
 
 ## Running Locally in Podman
