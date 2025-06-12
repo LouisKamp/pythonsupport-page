@@ -1,15 +1,14 @@
 .. _automated-reference-windows:
 
-{{ windows_icon }}  --- Automated Installation
-===============================================
+{{ windows_icon }} --- Automated Installation
+=============================================
 
 .. button-ref:: ../macos/automated
-   :ref-type: doc
-   :align: right
-   :color: primary
-   
-    Press here for {{ macos }} {{ apple_icon }}
+    :ref-type: doc
+    :align: right
+    :color: primary
 
+     Press here for {{ macos }} {{ apple_icon }}
 
 .. dropdown:: {{ video_install }}
     :open:
@@ -19,52 +18,50 @@
 
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=5b582377-000f-49dd-b2e9-b1dc00da49e7" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
-
 Install everything at once
----------------------------------------------------
+--------------------------
 
-.. card:: 
-   
-   Installs all packages and tools required for the 1\ :sup:`st` year
-   Polytechnical Foundation courses at DTU. 
+.. card::
 
-   #. 
-       Open PowerShell as an `Administrator` by opening the menu bar, then search for :menuselection:`Windows PowerShell`.
+    Installs all packages and tools required for the 1\ :sup:`st` year
+    Polytechnical Foundation courses at DTU.
 
-   #.
-       Once you see Windows PowerShell on the right-hand side, you can select :menuselection:`Run as Administrator`.
-       If not, right-click the icon and select :menuselection:`Run as Administrator`. 
+    #.
+        Open PowerShell as an `Administrator` by opening the menu bar, then search for :menuselection:`Windows PowerShell`.
 
-       .. image:: /images/install/windows-ps-run-admin.png
-          :width: 400
-          :align: center
+    #.
+        Once you see Windows PowerShell on the right-hand side, you can select :menuselection:`Run as Administrator`.
+        If not, right-click the icon and select :menuselection:`Run as Administrator`.
 
-   #. 
-       Copy the following line of code into the PowerShell window and press :kbd:`Enter`.
+        .. image:: /images/install/windows-ps-run-admin.png
+           :width: 400
+           :align: center
 
-       **Note**: please copy *the entire line*.
+    #.
+        Copy the following line of code into the PowerShell window and press :kbd:`Enter`.
 
-       .. code:: pwsh
+        **Note**: please copy *the entire line*.
 
-          PowerShell -ExecutionPolicy Bypass -Command "& {Invoke-Expression (Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/Windows_AutoInstall.ps1' -UseBasicParsing).Content}"
+        .. code:: pwsh
 
-       .. include:: /_rst_includes/tip-copy.rst
+           PowerShell -ExecutionPolicy Bypass -Command "& {Invoke-Expression (Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/Windows_AutoInstall.ps1' -UseBasicParsing).Content}"
 
-   #.
-       The script has finished when you see something like:
+        .. include:: /_rst_includes/tip-copy.rst
 
-       .. code:: bash
+    #.
+        The script has finished when you see something like:
 
-          Script has finished. You may now close the terminal...
+        .. code:: bash
 
-       Now, Python and Visual Studio Code will be ready to use.
+           Script has finished. You may now close the terminal...
 
-       .. note::
+        Now, Python and Visual Studio Code will be ready to use.
 
-          During the installation, you will see warnings and caveats, etc.
-          The script will resolve these automatically.
-          Please let the script finish.
+        .. note::
 
+           During the installation, you will see warnings and caveats, etc.
+           The script will resolve these automatically.
+           Please let the script finish.
 
 .. include:: /_rst_includes/tip-finish.rst
 

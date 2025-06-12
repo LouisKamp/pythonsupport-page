@@ -3,19 +3,19 @@
 Conda
 =====
 
-Conda will in this context be used to describe a ``conda`` command provider.
-The programs listed here, all provide this ``conda`` command, which it-self enables
-the installation and environment management commands required for a seamless
-usage of open-source software.
+Conda will in this context be used to describe a ``conda`` command
+provider. The programs listed here, all provide this ``conda`` command,
+which it-self enables the installation and environment management
+commands required for a seamless usage of open-source software.
 
-When people refer to ``Conda``, some mean ``Miniconda``, others ``Anaconda``, and some
-even ``Miniforge``.
-However, generally users do not care if the ``conda`` provider is one or the other.
+When people refer to ``Conda``, some mean ``Miniconda``, others
+``Anaconda``, and some even ``Miniforge``. However, generally users do
+not care if the ``conda`` provider is one or the other.
 
-Similarly, when software recommends one or the other, it will likely still be installable
-by using any of the other providers. So please select the provider once, and adapt
-installation procedures as noted in the below sections.
-
+Similarly, when software recommends one or the other, it will likely
+still be installable by using any of the other providers. So please
+select the provider once, and adapt installation procedures as noted in
+the below sections.
 
 .. _rec-conda-anaconda:
 
@@ -24,91 +24,92 @@ Anaconda
 
 .. danger::
 
-   Anaconda installations default to download content from
-   a *channel* that is licensed, i.e. *not free*!
+    Anaconda installations default to download content from a *channel*
+    that is licensed, i.e. *not free*!
 
-   The `terms of service <https://legal.anaconda.com/policies/en/>`__
-   has this small snippet (as of January 2025):
+    The `terms of service <https://legal.anaconda.com/policies/en/>`__
+    has this small snippet (as of January 2025):
 
-   | Your registration, download, use, installation, access, or enjoyment
-   | of all Anaconda Offerings on behalf of an organization that has two
-   | hundred (200) or more employees or contractors (“Organizational Use”)
-   | requires a paid license of Anaconda Business or Anaconda Enterprise.
-   | For sake of clarity, use by government entities and nonprofit entities
-   | with over 200 employees or contractors is considered Organizational Use.
+    |   Your registration, download, use, installation, access, or
+        enjoyment
+    |   of all Anaconda Offerings on behalf of an organization that has
+        two
+    |   hundred (200) or more employees or contractors (“Organizational
+        Use”)
+    |   requires a paid license of Anaconda Business or Anaconda
+        Enterprise.
+    |   For sake of clarity, use by government entities and nonprofit
+        entities
+    |   with over 200 employees or contractors is considered
+        Organizational Use.
 
-   This means that in order to install and use software provided through the
-   Anaconda channels (which is the default!) is requiring one to pay for the
-   software.
+    This means that in order to install and use software provided
+    through the Anaconda channels (which is the default!) is requiring
+    one to pay for the software.
 
-DTU does *not* recommend the installation of **Anaconda** since any non-teaching
-use will violate their terms of service.
+DTU does *not* recommend the installation of **Anaconda** since any
+non-teaching use will violate their terms of service.
 
-Instead please follow the installation instructions :ref:`here <install-python>`
-which will ensure that you are only installing things from the ``conda-forge`` channel,
-which is free.
-
-
+Instead please follow the installation instructions :ref:`here
+<install-python>` which will ensure that you are only installing things
+from the ``conda-forge`` channel, which is free.
 
 .. _rec-conda-miniconda:
 
 Miniconda
 =========
 
-While Miniconda is hosted, and maintained by the Anaconda company, it can be used
-in a *free* form by changing the default channel to ``conda-forge``.
+While Miniconda is hosted, and maintained by the Anaconda company, it
+can be used in a *free* form by changing the default channel to
+``conda-forge``.
 
 .. danger::
 
-   One will *have* to change the default channel *just after installation*
-   to ensure no terms of service violation.
+    One will *have* to change the default channel *just after
+    installation* to ensure no terms of service violation.
 
+Miniconda will be installed if you follow the :ref:`installation
+instructions <install-python>`.
 
-Miniconda will be installed if you follow the
-:ref:`installation instructions <install-python>`.
+The change is a one-time change that defaults the installation sources
+to the correct tree.
 
-The change is a one-time change that defaults the installation sources to the
-correct tree.
+.. code-block:: shell
 
-.. code:: shell
-
-   conda config --add channels conda-forge
-   conda config --remove channels defaults
+    conda config --add channels conda-forge
+    conda config --remove channels defaults
 
 .. attention::
 
-   Please be aware of installation instructions that install packages
-   from the Anaconda channels. If in doubt, feel free to
-   :mail:`contact us <pythonsupport@dtu.dk>`.
-
-
+    Please be aware of installation instructions that install packages
+    from the Anaconda channels. If in doubt, feel free to :mail:`contact
+    us <pythonsupport@dtu.dk>`.
 
 .. _rec-conda-miniforge:
 
 Miniforge
-===============================================
+=========
 
-This ``conda`` provider defaults to not use any Anaconda channels, and will
-thus be the easiest one to ensure no license violations.
-
-
+This ``conda`` provider defaults to not use any Anaconda channels, and
+will thus be the easiest one to ensure no license violations.
 
 .. _rec-conda-students:
 
 Students
 ========
 
-In general students can *freely* install and use the **Anaconda** software stack.
+In general students can *freely* install and use the **Anaconda**
+software stack.
 
-A student should, however, still be aware of the limitations of the above policy.
-For instance, if the student is hired in a company (not DTU) with more than
-200 employees, then they cannot use **Anaconda** for anything in that company.
+A student should, however, still be aware of the limitations of the
+above policy. For instance, if the student is hired in a company (not
+DTU) with more than 200 employees, then they cannot use **Anaconda** for
+anything in that company.
 
+Additionally, if a student creates work that is used in a DTU research
+project, it is not fully clear how the interpretation should be. When a
+student has signed a **G**-declaration then one could interpret the
+developed software/research as a work from DTU.
 
-Additionally, if a student creates work that is used in a DTU research project, it is
-not fully clear how the interpretation should be. When a student has
-signed a **G**-declaration then one could interpret the developed software/research as
-a work from DTU.
-
-Therefore, for simplicity, and to be future proof, we ask that you, as a student,
-follow the same guidelines as DTU employees.
+Therefore, for simplicity, and to be future proof, we ask that you, as a
+student, follow the same guidelines as DTU employees.
