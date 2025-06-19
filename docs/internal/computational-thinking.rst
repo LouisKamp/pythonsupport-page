@@ -190,3 +190,17 @@ helpful throughout their time at university.
     to code with python. 
 
     Note: Pygame, P5 for visual appealing examples
+
+3. Outreach
+-----------
+
+One of the biggest problems will be to promote students to use our 
+workshop and materials. Here are a few ideas to engage students in
+our work:
+
+1. The use of quizzes/challenges to promote the workshops
+2. Coordinate with IDA to host workshops.
+3. Create homework cafés in cooperation with the intro programming team.
+4. Get a Learn page so students automatically can see when and where workshops are being held (and also to promote python installation support).
+5. Talk to KABS to include the workshops on the weekly "kagemøder" for first semester students.
+6. Promote the workshops physically by speaking at the start of the Mathematics 1 lectures (When the programming starts)
