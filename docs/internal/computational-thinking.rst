@@ -103,9 +103,9 @@ title (give them what they came for but lets add a little extra).
 
     **Goal**: Get students started with using git in their coding projects
 
-    **Content**: Basic git and github
+    **Content**: Basic git and GitHub
 
-    **Material**: Basic guide on how to use github desktop or cheatsheet for the commandline
+    **Material**: Basic guide on how to use GitHub desktop or cheatsheet for the commandline
 
 .. card::
 
@@ -118,3 +118,75 @@ title (give them what they came for but lets add a little extra).
     **Content**: Use board games such as Robo Rally to teach computational thinking. Move then to a computer and show the similarities.
 
     **Material**: Board games and pygame.
+
+.. card::
+
+    **Title**: Next gen AI for coding
+
+    **Subtitle**: *How to utilize generative AI to maximize productivity*
+
+    **Goal**: Give students an overview of how modern machine learning tools work and how to utilize them
+
+    **Content**: Give examples on how to be an effective prompt engineer and how to use AI agents.
+
+    **Material**: The use of GitHub Copilot (Free access using GitHub Education)
+
+
+2. Material
+-----------
+
+Throughout a student time a DTU we should recognize that we can't offer a
+course or a workshop that teaches all the necessary prerequisites for using
+python for all possible engineering projects. Many of the simple questions 
+in regard to using Python can be answered surprisingly well by the use of 
+generative AI. For more complicated questions AI prompts we often see
+responses that do not work because of special technical details. For students
+to overcome these roadblocks themselves they need to understand what they are
+working with, which in most cases comes from reading the package documentation. 
+We should therefore strive to teach students how to use documentation in the
+cases where AI falls short or is not available. 
+
+Another problem is engaging students in using python in innovative ways.
+Here the biggest problem for unexperienced programmers is unknown unknowns.
+That is, there are things that students are not aware of that they do not
+understand.
+
+1. **Known Knows**: Things you do know (e.g., "I know how to use a for loop").
+2. **Known Unknowns**: Things you know you don't know (e.g., "I don't know how to implement a binary search tree"). These are manageable, you can research them.
+3. **Unknown Unknowns**: The real danger zone. You're unaware that there's something crucial missing from your understanding or skillset needed for the problem.
+
+Unknown Unknowns could be:
+
+1. Not knowing about assumptions needed to use a function
+2. Not knowing that your program uses a specific package: "well, the code runs works on my machine..."
+3. You're unaware of potential security vulnerabilities in your code.
+
+For new programmers this manifests itself most clearly in them not knowing
+what they are able to do with their new coding skills. Most new programmers 
+have never seen a well structured codebase, or how a big project looks like.
+Providing a Python "bible" or "cookbook" that includes examples of the most 
+used packages and language features could enable students to realize how to 
+solve different problems. Such a book should have a strong empathies on the 
+content not be connected to any coursework but how to generally solve problems 
+with "Computational thinking". Such notes should be clear, concise and be
+helpful throughout their time at university.
+
+**Proposals**:
+
+.. Card::
+    Runnable tutorials in the browser
+
+    A novel idea would be to provide runnable scripts in the browser that
+    showcased the basics of numpy, pandas, and matplotlib.
+
+    Note: https://livinnector.github.io/live-py-tutor
+
+.. Card::
+    Exmaples of miniprojects
+
+    Provide guides and examples for students on how to structure code projects.
+    These examples could be in the form of miniprojects that are unrelated to
+    any specific course, but should showcase what kinds of programs you are able 
+    to code with python. 
+
+    Note: Pygame, P5 for visual appealing examples
